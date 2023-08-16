@@ -254,6 +254,19 @@
                   "new": false,
                   "number": 10,
                   "score": ""
+                },
+                {
+                  "id": "be25ecc1-f4f3-40bf-8d05-54aeaaafcc49",
+                  "title": "Application ID intercepted",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Application ID intercepted",
+                  "mitigation": "encrypt application id on frontend",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
                 }
               ]
             }
@@ -1024,6 +1037,9 @@
               ]
             },
             "id": "6b39c2cc-cd81-4b28-a1c8-a1da574c7117",
+            "labels": [
+              "Decision number\nOutcome letter"
+            ],
             "source": {
               "cell": "cc2830b2-c8e6-4b06-8aba-44dc09dcb551"
             },
@@ -1035,9 +1051,6 @@
                 "x": 510,
                 "y": -340
               }
-            ],
-            "labels": [
-              "Decision number\nOutcome letter"
             ]
           },
           {
@@ -1291,17 +1304,7 @@
                 "x": 890,
                 "y": -290
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
@@ -1317,8 +1320,8 @@
                 "text": "Login"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -1333,8 +1336,22 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "fec24032-5f03-4b7f-955b-ca9b832a3540",
+                  "title": "credentials intercepted",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "credentials are intercepted",
+                  "mitigation": "encrypt credentials on frontend",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1537,6 +1554,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 25
+    "threatTop": 27
   }
 }
